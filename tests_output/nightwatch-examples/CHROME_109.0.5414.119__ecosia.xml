@@ -5,9 +5,9 @@
 
   <testsuite name="nightwatch-examples.ecosia"
     errors="0" failures="0" hostname="" id="" package="nightwatch-examples" skipped="0"
-    tests="1" time="2.605" timestamp="">
+    tests="1" time="3.438" timestamp="">
   
-    <testcase name="Demo test ecosia.org" classname="nightwatch-examples.ecosia" time="2.605" assertions="4">
+    <testcase name="Demo test ecosia.org" classname="nightwatch-examples.ecosia" time="3.438" assertions="4">
 
     
 
