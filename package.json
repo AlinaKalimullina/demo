@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx nightwatch ./tests/nightwatch-examples/ecosia.js --headless"
+    "test": "npx nightwatch ./tests/Auth.js --headless"
+
   },
   "author": "",
   "license": "ISC",

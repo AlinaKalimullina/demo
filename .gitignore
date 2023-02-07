@@ -1,2 +1,14 @@
-/node_modules
+*.idea
+*.log
+*.env
+.DS_Store
+node_modules
+npm-debug.log
+output
+tests_output
 /logs
+/screens
+/nightwatch.json
+/nightwatch.conf.js
+html-report/
+test-results.xml
