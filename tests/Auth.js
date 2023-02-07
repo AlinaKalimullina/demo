@@ -1,12 +1,8 @@
 describe('auth proffit', function() {
-    //functional
+
     const loginInput = element('input[type=text]')
     const passInput = element('input[type=password]')
     const enterButtonEl = element('button.el-button.el-button--primary')
-
-    //elements
-    const header = element('header.header')
-
 
     it('auth proffit (admin)', async function() {
         await browser
@@ -25,7 +21,5 @@ describe('auth proffit', function() {
             .assert.hasClass('#app > div.auth-layout > div > form > div.actions-extra > div > div > label', 'el-checkbox is-checked')
             .click('#app > div.auth-layout > div > form > div.actions-extra > div > div > label')
             .click(enterButtonEl)
-/*            .assert.visible(header)
-            .assert.textContains(header, 'Дашборды и отчеты')*/
     });
 });
