@@ -1,10 +1,10 @@
-describe('auth proffit', function() {
+describe('auth profit', function() {
 
     const loginInput = element('input[type=text]')
     const passInput = element('input[type=password]')
     const enterButtonEl = element('button.el-button.el-button--primary')
 
-    it('auth proffit (admin)', async function() {
+    it('auth profit (admin)', async function() {
         await browser
             .navigateTo(process.env.URL)
             .assert.visible(loginInput)
