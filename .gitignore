@@ -8,6 +8,5 @@ output
 /tests_output
 /logs
 /screens
-nightwatch.conf.js
 html-report/
 test-results.xml
