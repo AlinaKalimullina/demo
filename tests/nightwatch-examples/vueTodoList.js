@@ -16,7 +16,7 @@
 
     // adding a new task to the list
     await browser
-      .navigateTo(process.env.URL)
+      .navigateTo('https://todo-vue3-vite.netlify.app/')
       .sendKeys(todoElement, 'what is nightwatch?')
       .click(addButtonEl);
 
