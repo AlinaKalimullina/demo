@@ -1,12 +1,13 @@
 describe('auth profit', function() {
 
+    before(browser => browser.navigateTo('https://proffit.smprojects.ru'))
+
     const loginInput = element('input[type=text]')
     const passInput = element('input[type=password]')
     const enterButtonEl = element('button.el-button.el-button--primary')
 
     it('auth profit (admin)', async function() {
         await browser
-            .navigateTo('https://proffit.smprojects.ru')
             .assert.visible(loginInput)
             .assert.attributeEquals(loginInput, "data-mask", "+7 (###) ### ## ##")
             .setValue(loginInput, process.env.ADMIN_LOGIN)
@@ -22,4 +23,5 @@ describe('auth profit', function() {
             .click('#app > div.auth-layout > div > form > div.actions-extra > div > div > label')
             .click(enterButtonEl)
     });
+    after(browser => browser.end());
 });
