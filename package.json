@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx nightwatch ./tests/front/SavePhoneNumber.js --headless",
+    "test": "npx nightwatch ./tests/front/SavePhoneNumber.js --headless"
+
   },
   "author": "",
   "license": "ISC",
