@@ -6,7 +6,7 @@ describe('auth profit', function() {
 
     it('auth profit (admin)', async function() {
         await browser
-            .navigateTo(process.env.URL)
+            .navigateTo('https://proffit.smprojects.ru')
             .assert.visible(loginInput)
             .assert.attributeEquals(loginInput, "data-mask", "+7 (###) ### ## ##")
             .setValue(loginInput, process.env.ADMIN_LOGIN)
