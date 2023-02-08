@@ -13,8 +13,8 @@ describe('check validation', function() {
         browser
             .setValue(loginInput, process.env.ADMIN_PHONE_INCORRECT)
             .setValue(passInput, process.env.ADMIN_PASS)
-            .assert.visible(enterButtonEl)
-            .click(enterButtonEl)
+            .assert.visible('button.el-button.el-button--primary')
+            .click('button.el-button.el-button--primary')
             .assert.textContains(loginValidation, 'Неправильно введён номер телефона или пароль')
     })
 
