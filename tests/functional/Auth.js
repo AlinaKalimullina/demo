@@ -1,6 +1,6 @@
 describe('auth profit', function() {
 
-    before(browser => browser.navigateTo('https://proffit.smprojects.ru'))
+    before(browser => browser.url(browser.launch_url))
 
     const loginInput = element('input[type=text]')
     const passInput = element('input[type=password]')
@@ -10,7 +10,7 @@ describe('auth profit', function() {
         await browser
             .assert.visible(loginInput)
             .assert.attributeEquals(loginInput, "data-mask", "+7 (###) ### ## ##")
-            .setValue(loginInput, process.env.ADMIN_LOGIN)
+            .setValue(loginInput, process.env.ADMIN_PHONE)
             .assert.visible(passInput)
             .setValue(passInput, process.env.ADMIN_PASS)
             .assert.hasClass('#app > div.auth-layout > div > form > div.custom-input.type-password.has-placeholder.focused > div > div.password-show > span', 'eye-closed')

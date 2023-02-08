@@ -33,7 +33,7 @@ module.exports = {
   test_settings: {
     default: {
       disable_error_log: false,
-      launch_url: 'https://nightwatchjs.org/',
+      launch_url: 'https://proffit.smprojects.ru',
 
       screenshots: {
         enabled: false,
