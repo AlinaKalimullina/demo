@@ -17,7 +17,7 @@ describe('check validation', function() {
             .setValue('input[type=text]', process.env.ADMIN_PHONE_INCORRECT)
             .setValue('input[type=password]', process.env.ADMIN_PASS_INCORRECT)
             .click(enterButtonEl)
-            .assert.textContains(formEl, 'Неправильно введён номер телефона или пароль\n')
+            .assert.textContains(formEl, 'Неправильно введён номер телефона или пароль')
     })
 
     after(browser => browser.end());
