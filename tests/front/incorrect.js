@@ -15,7 +15,8 @@ describe('check validation', function() {
             .assert.visible(passInput)
             .setValue(passInput, process.env.ADMIN_PASS_INCORRECT)
             .click(enterButtonEl)
-            .assert.textContains(formEl, 'Неправильно введён номер телефона или пароль')
-    });
+            .assert.hasClass(formEl, 'div.error')
+    })
+
     after(browser => browser.end());
 });
