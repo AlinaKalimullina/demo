@@ -5,7 +5,7 @@ describe('check validation', function() {
     const enterButtonEl = element('button.el-button.el-button--primary')
     const formEl = element('#app > div.auth-layout > div > form')
 
-    it('empty', async function() {
+    it('stay empty inputs in auth', async function() {
         browser
             .click(enterButtonEl)
             .assert.textContains(formEl, 'Обязательно для заполнения.')
