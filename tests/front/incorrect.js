@@ -12,7 +12,7 @@ describe('check validation', function() {
             .setValue(loginInput, process.env.ADMIN_PHONE_INCORRECT)
             .setValue(passInput, process.env.ADMIN_PASS_INCORRECT)
             .click(enterButtonEl)
-            .assert.visible('#app > div.auth-layout > div > form > div.custom-input.has-placeholder.has-errors.keep-placeholder-on-focus.focused > div.error')
+            .expect.element('div.error').to.be.visible;
     })
 
     after(browser => browser.end());
