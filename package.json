@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx nightwatch tests --headless"
+    "test": "npx nightwatch tests/front/incorrect.js --headless"
 
   },
   "author": "",
