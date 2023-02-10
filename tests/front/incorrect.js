@@ -15,6 +15,7 @@ describe('check validation', function() {
             .assert.visible(passInput)
             .setValue(passInput, process.env.ADMIN_PASS_INCORRECT)
             .click(enterButtonEl)
+            .assert.visible(formEl)
             .assert.hasClass(formEl, 'error')
     })
 
