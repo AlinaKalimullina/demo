@@ -1,0 +1,4 @@
+node_modules
+package.json
+*.json
+lib/reporter/reporters/html

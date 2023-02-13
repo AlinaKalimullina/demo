@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx nightwatch tests/front/restorePass.js --headless"
-
+    "test": "npx nightwatch tests/front/restorePass.js --headless",
+    "lint": "npx eslint tests"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chromedriver": "^109.0.0",
+    "eslint": "^8.34.0",
     "nightwatch": "^2.6.13"
   }
 }
