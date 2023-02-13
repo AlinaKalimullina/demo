@@ -11,7 +11,7 @@ describe('resert login', function() {
             .assert.urlContains('/auth/forgot')
 
         const result = await browser.getValue('input[type=text]')
-        await browser.assert.valueEquals("input[type=text]", result)
+        await browser.assert.valueEquals('input[type=text]', result)
 
     })
 
