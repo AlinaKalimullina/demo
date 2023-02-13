@@ -11,5 +11,14 @@ module.exports = {
         "sourceType": "module"
     },
     "rules": {
+        "eqeqeq": "off",
+        "curly": [
+            "error",
+            "all"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ]
     }
 }
