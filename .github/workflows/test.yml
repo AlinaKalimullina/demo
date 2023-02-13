@@ -20,5 +20,4 @@ jobs:
       - name: Install dependecies
         run: npm install
       - name: Run linter
-        with:
-          eslint: true
+        run: npm run lint

@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "npx nightwatch tests/front/restorePass.js --headless",
-    "lint": "npx eslint tests/front/restorePass.js "
+    "lint:js": "eslint tests/**/*.js",
+    "lint": "npm run lint:js"
   },
   "author": "",
   "license": "ISC",
