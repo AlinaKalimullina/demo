@@ -12,10 +12,5 @@ jobs:
         run: npm install
       - name: Test
         run: npm test
-      - name: Get Allure history
-        uses: actions/checkout@v2
-        if: always()
-        continue-on-error: true
-        with:
-          ref: gh-pages
-          path: gh-pages
+      - name: Get Allure report
+        run: allure generate ./allure-results --clean && allure open
