@@ -1,14 +1,23 @@
-name: token
-on: workflow_dispatch
-
-permissions:
-  contents: read
-  pull-requests: write
-
+name: testing
+on:
+  push:
+    branches: [ "master" ]
 jobs:
-  triage:
+  test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/labeler@v4
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Git repository code
+        uses: actions/checkout@v3
+      - name: Install dependecies
+        run: npm install
+      - name: Test
+        run: npm test
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git repository code
+        uses: actions/checkout@v3
+      - name: Install dependecies
+        run: npm install
+      - name: Run linter
+        run: npm run lint
