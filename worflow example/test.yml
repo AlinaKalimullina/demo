@@ -1,0 +1,14 @@
+name: testing
+on:
+  push:
+    branches: [ "master" ]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git repository code
+        uses: actions/checkout@v3
+      - name: Install dependecies
+        run: npm install
+      - name: Test
+        run: npm test
