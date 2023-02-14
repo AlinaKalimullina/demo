@@ -12,5 +12,12 @@ jobs:
         run: npm install
       - name: Test
         run: npm test
-      - name: Get Allure report
-        run: allure generate ./allure-results --clean && allure open
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Git repository code
+        uses: actions/checkout@v3
+      - name: Install dependecies
+        run: npm install
+      - name: Run linter
+        run: npm run lint
