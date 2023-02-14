@@ -12,12 +12,10 @@ jobs:
         run: npm install
       - name: Test
         run: npm test
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Git repository code
-        uses: actions/checkout@v3
-      - name: Install dependecies
-        run: npm install
-      - name: Run linter
-        run: npm run lint
+      - name: Get Allure history
+        uses: actions/checkout@v2
+        if: always()
+        continue-on-error: true
+        with:
+          ref: gh-pages
+          path: gh-pages

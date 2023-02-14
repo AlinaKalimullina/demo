@@ -29,7 +29,10 @@ module.exports = {
   globals_path: '',
 
   webdriver: {},
-
+  test_workers: {
+    enabled: true,
+    workers: "auto"
+  },
   test_settings: {
     default: {
       disable_error_log: false,
